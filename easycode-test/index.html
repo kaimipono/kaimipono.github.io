@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Test</title>
+		<meta name="description" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="stylesheet" href="css/main.css" />
+		
+	</head>
+	<body>
+		
+		<div class="wrap">
+			<header>
+				logo
+			</header>
+			<div class="main clearfix">
+				<div class="wrap-form">
+					<div class="add-new">
+						<p>
+							<label>Name</label><br>
+							<input type="text" name="user-name" id="user-name" required>
+						</p>
+						<p>
+							<label>Email</label><br>
+							<input type="email" name="user-email" id="user-email" required>
+						</p>
+						<p>
+							<label>Role</label><br>
+							<select id="select" required>
+								<option value="admin">admin</option>
+								<option value="user" selected>user</option>
+								<option value="guest">guest</option>
+							</select>
+						</p>
+						<p>
+							<button id="add">Add</button>
+						</p>
+					</div>
+
+					<div id="table-users">
+						<table id="users">
+							<caption>Users</caption>
+							<tr>
+								<th>Name</th>
+								<th>Email</th>
+								<th>Role</th>
+							</tr>
+						</table>
+						<button id="clear">Clear</button>
+					</div>
+				</div>
+				<div class="content" id="content">
+					content
+				</div>
+			</div>
+		</div>
+		<footer>
+			footer
+		</footer>
+	<script src="js/main.js"></script>	
+	</body>
+
+</html>
