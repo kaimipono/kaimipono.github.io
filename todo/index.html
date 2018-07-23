@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+<body>
+    <div class="appWrapper">
+        <header class="appHeader">
+            <h1 class="appHeader__title">ToDo App</h1>
+        </header>
+        <main class="appBody">
+            <div class="inputForm">
+                <input type="text" placeholder="Enter the task" class="inputForm__input">
+                <button class="inputForm__btn"><i class="fa fa-plus"></i></button>
+            </div>
+            <ul class="tasks" id="uncompleted">
+                <!-- <li class="tasks__item">
+                    <div class="item__text">Вынести мусор</div>
+                    <div class="item__buttons">
+                        <button class="complete"><i class="fa fa-check"></i></button>
+                        <button class="remove"><i class="fa fa-trash"></i></button>
+                    </div>
+                </li> -->
+            </ul>
+            <ul class="tasks" id="completed"></ul>
+                <!-- <li class="tasks__item">
+                    <div class="item__text">Вынести мусор</div>
+                    <div class="item__buttons">
+                        <button class="refresh"><i class="fa fa-sync"></i></button>
+                        <button class="remove"><i class="fa fa-trash"></i></button>
+                    </div>
+                </li> -->
+            
+        </main>
+
+    </div>
+    
+    <script src="js/scripts.js"></script>
+</body>
+</html>
