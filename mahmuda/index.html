@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mahmuda</title>
+    <meta name="description" content="The is a creative lifestyle blog template with multiple pages: home, about, contact, and posts">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper-page">
+      <header class="header">
+        <div class="container">
+          <div class="header__welcome">
+            <p>Welcome To Our Lifestyle Blog</p>
+            <p>Today: 17 July, 2018</p>
+          </div>
+          <div class="socials"><a class="fb__link" href="#">
+              <div class="social socials__fb"><i class="fab fa-facebook-f"></i></div></a><a class="tw__link" href="#">
+              <div class="social socials__tw"><i class="fab fa-twitter"></i></div></a><a class="in__link" href="#">
+              <div class="social socials__in"><i class="fab fa-instagram"></i></div></a><a class="gp__link" href="#">
+              <div class="social socials__gp"><i class="fab fa-google-plus-g"></i></div></a></div>
+        </div>
+      </header>
+      <div class="top-line"></div>
+      <div class="wrapper-content">
+        <nav class="navigation">
+          <ul class="navigation__menu">
+            <li class="nav__item"><a class="nav__link">home</a></li>
+            <li class="nav__item"><a class="nav__link">food</a></li>
+            <li class="nav__item"><a class="nav__link">drink</a></li>
+            <li class="nav__item"><a class="nav__link">life</a></li>
+            <li class="nav__item"><a class="nav__link">recipes</a></li>
+            <li class="nav__item"><a class="nav__link">travel</a></li>
+            <li class="nav__item"><a class="nav__link">about</a></li>
+            <li class="nav__item"><a class="nav__link">contact</a></li>
+            <button class="hamburger__menu" onclick="expandMenu()"><i class="fas fa-bars"></i></button>
+          </ul>
+        </nav>
+        <div class="container">
+          <main class="main-content">
+            <section class="travel">
+              <div class="slider-gallery">
+                <div class="slide"><img class="slide__img" src="../images/img01.jpg" alt="Image one" style="width:100%">
+                  <div class="slide__desc">
+                    <button class="travel-btn">travel</button>
+                    <p class="desc">Voluptas assumenda sunt omnis modi ut ut</p>
+                  </div>
+                </div>
+                <div class="slide"><img class="slide__img" src="../images/img02.jpg" alt="Image two" style="width:100%">
+                  <div class="slide__desc">
+                    <button class="travel-btn">travel</button>
+                    <p class="desc">Eos voluptatem aut doloremque</p>
+                  </div>
+                </div>
+                <div class="slide"><img class="slide__img" src="../images/img03.jpg" alt="Image three" style="width:100%">
+                  <div class="slide__desc">
+                    <button class="travel-btn">travel</button>
+                    <p class="desc">Fugiat in cupiditate iusto dolor dolorem</p>
+                  </div>
+                </div>
+                <div class="slide"><img class="slide__img" src="../images/img04.jpg" alt="Image four" style="width:100%">
+                  <div class="slide__desc">
+                    <button class="travel-btn">travel</button>
+                    <p class="desc">Doloremque deleniti voluptatum dolorem</p>
+                  </div>
+                </div>
+                <button class="slider-gallery__btn prev" onclick="plusSlides(-1)"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-gallery__btn next" onclick="plusSlides(1)"><i class="fas fa-chevron-right"></i></button>
+                <div class="row-thumbs">
+                  <div class="column">
+                    <div class="slide__thumb" onclick="currentSlide(1)"><img src="../images/img01.jpg" alt="Image one" style="width:100%">
+                      <div class="thumb__desc">
+                        <button class="travel-btn">travel</button>
+                        <p class="thumb__text">Voluptas assumenda sunt omnis modi ut ut</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="slide__thumb" onclick="currentSlide(2)"><img src="../images/img02.jpg" alt="Image two" style="width:100%">
+                      <div class="thumb__desc">
+                        <button class="travel-btn">travel</button>
+                        <p class="thumb__text">Eos voluptatem aut doloremque</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="slide__thumb" onclick="currentSlide(3)"><img src="../images/img03.jpg" alt="Image three" style="width:100%">
+                      <div class="thumb__desc">
+                        <button class="travel-btn">travel</button>
+                        <p class="thumb__text">Fugiat in cupiditate iusto dolor dolorem</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="slide__thumb" onclick="currentSlide(4)"><img src="../images/img04.jpg" alt="Image four" style="width:100%">
+                      <div class="thumb__desc">
+                        <button class="travel-btn">travel</button>
+                        <p class="thumb__text">Doloremque deleniti voluptatum dolorem</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="section latest-post">
+              <h1 class="section-title">latests posts</h1>
+              <div class="gallery-page">
+                <div class="page page-0">
+                  <div class="cards">
+                    <div class="card"><img class="card__img" src="../../images/card01.jpg" alt="card #1" style="width:100%">
+                      <button class="travel-btn">travel</button>
+                      <div class="card__posted">
+                        <div class="posted__user"><i class="far fa-user"></i>John Doe</div>
+                        <div class="posted__date"><i class="far fa-clock"></i>15 Sep, 2018</div>
+                      </div>
+                      <p class="card__desc">Similique fugit occaecati dolor ipsum ducimus</p>
+                    </div>
+                    <div class="card"><img class="card__img" src="../../images/card02.jpg" alt="card #2" style="width:100%">
+                      <button class="travel-btn">travel</button>
+                      <div class="card__posted">
+                        <div class="posted__user"><i class="far fa-user"></i>John Doe</div>
+                        <div class="posted__date"><i class="far fa-clock"></i>15 Sep, 2018</div>
+                      </div>
+                      <p class="card__desc">Quaerat temporibus sunt et quia sed id</p>
+                    </div>
+                    <div class="card"><img class="card__img" src="../../images/card03.jpg" alt="card #3" style="width:100%">
+                      <button class="travel-btn">travel</button>
+                      <div class="card__posted">
+                        <div class="posted__user"><i class="far fa-user"></i>John Doe</div>
+                        <div class="posted__date"><i class="far fa-clock"></i>15 Sep, 2018</div>
+                      </div>
+                      <p class="card__desc">Fugiat in cupiditate iusto dolor dolorem</p>
+                    </div>
+                    <div class="card"><img class="card__img" src="../../images/card04.jpg" alt="card #4" style="width:100%">
+                      <button class="travel-btn">travel</button>
+                      <div class="card__posted">
+                        <div class="posted__user"><i class="far fa-user"></i>John Doe</div>
+                        <div class="posted__date"><i class="far fa-clock"></i>15 Sep, 2018</div>
+                      </div>
+                      <p class="card__desc">Eos voluptatem aut doloremque</p>
+                    </div>
+                    <div class="card"><img class="card__img" src="../../images/card05.jpg" alt="card #5" style="width:100%">
+                      <button class="travel-btn">travel</button>
+                      <div class="card__posted">
+                        <div class="posted__user"><i class="far fa-user"></i>John Doe</div>
+                        <div class="posted__date"><i class="far fa-clock"></i>15 Sep, 2018</div>
+                      </div>
+                      <p class="card__desc">Temporibus quod architecto pariatur sint itaque temporibus</p>
+                    </div>
+                    <div class="card"><img class="card__img" src="../../images/card06.jpg" alt="card #6" style="width:100%">
+                      <button class="travel-btn">travel</button>
+                      <div class="card__posted">
+                        <div class="posted__user"><i class="far fa-user"></i>John Doe</div>
+                        <div class="posted__date"><i class="far fa-clock"></i>15 Sep, 2018</div>
+                      </div>
+                      <p class="card__desc">Ut adipisci ullam sit iste vel voluptatem</p>
+                    </div>
+                    <div class="card"><img class="card__img" src="../../images/card07.jpg" alt="card #7" style="width:100%">
+                      <button class="travel-btn">travel</button>
+                      <div class="card__posted">
+                        <div class="posted__user"><i class="far fa-user"></i>John Doe</div>
+                        <div class="posted__date"><i class="far fa-clock"></i>15 Sep, 2018</div>
+                      </div>
+                      <p class="card__desc">Molestiae dolor dignissimos cupiditate</p>
+                    </div>
+                    <div class="card"><img class="card__img" src="../../images/card08.jpg" alt="card #8" style="width:100%">
+                      <button class="travel-btn">travel</button>
+                      <div class="card__posted">
+                        <div class="posted__user"><i class="far fa-user"></i>John Doe</div>
+                        <div class="posted__date"><i class="far fa-clock"></i>15 Sep, 2018</div>
+                      </div>
+                      <p class="card__desc">Doloremque deleniti voluptatum dolorem</p>
+                    </div>
+                    <div class="card"><img class="card__img" src="../../images/card09.jpg" alt="card #9" style="width:100%">
+                      <button class="travel-btn">travel</button>
+                      <div class="card__posted">
+                        <div class="posted__user"><i class="far fa-user"></i>John Doe</div>
+                        <div class="posted__date"><i class="far fa-clock"></i>15 Sep, 2018</div>
+                      </div>
+                      <p class="card__desc">Fugiat in cupiditate iusto dolor dolorem</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="page page-1">
+                  <div class="cards">
+                    <div class="card"><img class="card__img" src="../../images/card01.jpg" alt="card #1" style="width:100%">
+                      <button class="travel-btn">travel</button>
+                      <div class="card__posted">
+                        <div class="posted__user"><i class="far fa-user"></i>John Doe</div>
+                        <div class="posted__date"><i class="far fa-clock"></i>15 Sep, 2018</div>
+                      </div>
+                      <p class="card__desc">Similique fugit occaecati dolor ipsum ducimus</p>
+                    </div>
+                    <div class="card"><img class="card__img" src="../../images/card02.jpg" alt="card #2" style="width:100%">
+                      <button class="travel-btn">travel</button>
+                      <div class="card__posted">
+                        <div class="posted__user"><i class="far fa-user"></i>John Doe</div>
+                        <div class="posted__date"><i class="far fa-clock"></i>15 Sep, 2018</div>
+                      </div>
+                      <p class="card__desc">Quaerat temporibus sunt et quia sed id</p>
+                    </div>
+                    <div class="card"><img class="card__img" src="../../images/card03.jpg" alt="card #3" style="width:100%">
+                      <button class="travel-btn">travel</button>
+                      <div class="card__posted">
+                        <div class="posted__user"><i class="far fa-user"></i>John Doe</div>
+                        <div class="posted__date"><i class="far fa-clock"></i>15 Sep, 2018</div>
+                      </div>
+                      <p class="card__desc">Fugiat in cupiditate iusto dolor dolorem</p>
+                    </div>
+                    <div class="card"><img class="card__img" src="../../images/card04.jpg" alt="card #4" style="width:100%">
+                      <button class="travel-btn">travel</button>
+                      <div class="card__posted">
+                        <div class="posted__user"><i class="far fa-user"></i>John Doe</div>
+                        <div class="posted__date"><i class="far fa-clock"></i>15 Sep, 2018</div>
+                      </div>
+                      <p class="card__desc">Eos voluptatem aut doloremque</p>
+                    </div>
+                    <div class="card"><img class="card__img" src="../../images/card05.jpg" alt="card #5" style="width:100%">
+                      <button class="travel-btn">travel</button>
+                      <div class="card__posted">
+                        <div class="posted__user"><i class="far fa-user"></i>John Doe</div>
+                        <div class="posted__date"><i class="far fa-clock"></i>15 Sep, 2018</div>
+                      </div>
+                      <p class="card__desc">Temporibus quod architecto pariatur sint itaque temporibus</p>
+                    </div>
+                    <div class="card"><img class="card__img" src="../../images/card06.jpg" alt="card #6" style="width:100%">
+                      <button class="travel-btn">travel</button>
+                      <div class="card__posted">
+                        <div class="posted__user"><i class="far fa-user"></i>John Doe</div>
+                        <div class="posted__date"><i class="far fa-clock"></i>15 Sep, 2018</div>
+                      </div>
+                      <p class="card__desc">Ut adipisci ullam sit iste vel voluptatem</p>
+                    </div>
+                    <div class="card"><img class="card__img" src="../../images/card07.jpg" alt="card #7" style="width:100%">
+                      <button class="travel-btn">travel</button>
+                      <div class="card__posted">
+                        <div class="posted__user"><i class="far fa-user"></i>John Doe</div>
+                        <div class="posted__date"><i class="far fa-clock"></i>15 Sep, 2018</div>
+                      </div>
+                      <p class="card__desc">Molestiae dolor dignissimos cupiditate</p>
+                    </div>
+                    <div class="card"><img class="card__img" src="../../images/card08.jpg" alt="card #8" style="width:100%">
+                      <button class="travel-btn">travel</button>
+                      <div class="card__posted">
+                        <div class="posted__user"><i class="far fa-user"></i>John Doe</div>
+                        <div class="posted__date"><i class="far fa-clock"></i>15 Sep, 2018</div>
+                      </div>
+                      <p class="card__desc">Doloremque deleniti voluptatum dolorem</p>
+                    </div>
+                    <div class="card"><img class="card__img" src="../../images/card09.jpg" alt="card #9" style="width:100%">
+                      <button class="travel-btn">travel</button>
+                      <div class="card__posted">
+                        <div class="posted__user"><i class="far fa-user"></i>John Doe</div>
+                        <div class="posted__date"><i class="far fa-clock"></i>15 Sep, 2018</div>
+                      </div>
+                      <p class="card__desc">Fugiat in cupiditate iusto dolor dolorem</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="page page-2">
+                  <div class="cards">
+                    <div class="card"><img class="card__img" src="../../images/card01.jpg" alt="card #1" style="width:100%">
+                      <button class="travel-btn">travel</button>
+                      <div class="card__posted">
+                        <div class="posted__user"><i class="far fa-user"></i>John Doe</div>
+                        <div class="posted__date"><i class="far fa-clock"></i>15 Sep, 2018</div>
+                      </div>
+                      <p class="card__desc">Similique fugit occaecati dolor ipsum ducimus</p>
+                    </div>
+                    <div class="card"><img class="card__img" src="../../images/card02.jpg" alt="card #2" style="width:100%">
+                      <button class="travel-btn">travel</button>
+                      <div class="card__posted">
+                        <div class="posted__user"><i class="far fa-user"></i>John Doe</div>
+                        <div class="posted__date"><i class="far fa-clock"></i>15 Sep, 2018</div>
+                      </div>
+                      <p class="card__desc">Quaerat temporibus sunt et quia sed id</p>
+                    </div>
+                    <div class="card"><img class="card__img" src="../../images/card03.jpg" alt="card #3" style="width:100%">
+                      <button class="travel-btn">travel</button>
+                      <div class="card__posted">
+                        <div class="posted__user"><i class="far fa-user"></i>John Doe</div>
+                        <div class="posted__date"><i class="far fa-clock"></i>15 Sep, 2018</div>
+                      </div>
+                      <p class="card__desc">Fugiat in cupiditate iusto dolor dolorem</p>
+                    </div>
+                    <div class="card"><img class="card__img" src="../../images/card04.jpg" alt="card #4" style="width:100%">
+                      <button class="travel-btn">travel</button>
+                      <div class="card__posted">
+                        <div class="posted__user"><i class="far fa-user"></i>John Doe</div>
+                        <div class="posted__date"><i class="far fa-clock"></i>15 Sep, 2018</div>
+                      </div>
+                      <p class="card__desc">Eos voluptatem aut doloremque</p>
+                    </div>
+                    <div class="card"><img class="card__img" src="../../images/card05.jpg" alt="card #5" style="width:100%">
+                      <button class="travel-btn">travel</button>
+                      <div class="card__posted">
+                        <div class="posted__user"><i class="far fa-user"></i>John Doe</div>
+                        <div class="posted__date"><i class="far fa-clock"></i>15 Sep, 2018</div>
+                      </div>
+                      <p class="card__desc">Temporibus quod architecto pariatur sint itaque temporibus</p>
+                    </div>
+                    <div class="card"><img class="card__img" src="../../images/card06.jpg" alt="card #6" style="width:100%">
+                      <button class="travel-btn">travel</button>
+                      <div class="card__posted">
+                        <div class="posted__user"><i class="far fa-user"></i>John Doe</div>
+                        <div class="posted__date"><i class="far fa-clock"></i>15 Sep, 2018</div>
+                      </div>
+                      <p class="card__desc">Ut adipisci ullam sit iste vel voluptatem</p>
+                    </div>
+                    <div class="card"><img class="card__img" src="../../images/card07.jpg" alt="card #7" style="width:100%">
+                      <button class="travel-btn">travel</button>
+                      <div class="card__posted">
+                        <div class="posted__user"><i class="far fa-user"></i>John Doe</div>
+                        <div class="posted__date"><i class="far fa-clock"></i>15 Sep, 2018</div>
+                      </div>
+                      <p class="card__desc">Molestiae dolor dignissimos cupiditate</p>
+                    </div>
+                    <div class="card"><img class="card__img" src="../../images/card08.jpg" alt="card #8" style="width:100%">
+                      <button class="travel-btn">travel</button>
+                      <div class="card__posted">
+                        <div class="posted__user"><i class="far fa-user"></i>John Doe</div>
+                        <div class="posted__date"><i class="far fa-clock"></i>15 Sep, 2018</div>
+                      </div>
+                      <p class="card__desc">Doloremque deleniti voluptatum dolorem</p>
+                    </div>
+                    <div class="card"><img class="card__img" src="../../images/card09.jpg" alt="card #9" style="width:100%">
+                      <button class="travel-btn">travel</button>
+                      <div class="card__posted">
+                        <div class="posted__user"><i class="far fa-user"></i>John Doe</div>
+                        <div class="posted__date"><i class="far fa-clock"></i>15 Sep, 2018</div>
+                      </div>
+                      <p class="card__desc">Fugiat in cupiditate iusto dolor dolorem</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="page page-3">
+                  <div class="cards">
+                    <div class="card"><img class="card__img" src="../../images/card01.jpg" alt="card #1" style="width:100%">
+                      <button class="travel-btn">travel</button>
+                      <div class="card__posted">
+                        <div class="posted__user"><i class="far fa-user"></i>John Doe</div>
+                        <div class="posted__date"><i class="far fa-clock"></i>15 Sep, 2018</div>
+                      </div>
+                      <p class="card__desc">Similique fugit occaecati dolor ipsum ducimus</p>
+                    </div>
+                    <div class="card"><img class="card__img" src="../../images/card02.jpg" alt="card #2" style="width:100%">
+                      <button class="travel-btn">travel</button>
+                      <div class="card__posted">
+                        <div class="posted__user"><i class="far fa-user"></i>John Doe</div>
+                        <div class="posted__date"><i class="far fa-clock"></i>15 Sep, 2018</div>
+                      </div>
+                      <p class="card__desc">Quaerat temporibus sunt et quia sed id</p>
+                    </div>
+                    <div class="card"><img class="card__img" src="../../images/card03.jpg" alt="card #3" style="width:100%">
+                      <button class="travel-btn">travel</button>
+                      <div class="card__posted">
+                        <div class="posted__user"><i class="far fa-user"></i>John Doe</div>
+                        <div class="posted__date"><i class="far fa-clock"></i>15 Sep, 2018</div>
+                      </div>
+                      <p class="card__desc">Fugiat in cupiditate iusto dolor dolorem</p>
+                    </div>
+                    <div class="card"><img class="card__img" src="../../images/card04.jpg" alt="card #4" style="width:100%">
+                      <button class="travel-btn">travel</button>
+                      <div class="card__posted">
+                        <div class="posted__user"><i class="far fa-user"></i>John Doe</div>
+                        <div class="posted__date"><i class="far fa-clock"></i>15 Sep, 2018</div>
+                      </div>
+                      <p class="card__desc">Eos voluptatem aut doloremque</p>
+                    </div>
+                    <div class="card"><img class="card__img" src="../../images/card05.jpg" alt="card #5" style="width:100%">
+                      <button class="travel-btn">travel</button>
+                      <div class="card__posted">
+                        <div class="posted__user"><i class="far fa-user"></i>John Doe</div>
+                        <div class="posted__date"><i class="far fa-clock"></i>15 Sep, 2018</div>
+                      </div>
+                      <p class="card__desc">Temporibus quod architecto pariatur sint itaque temporibus</p>
+                    </div>
+                    <div class="card"><img class="card__img" src="../../images/card06.jpg" alt="card #6" style="width:100%">
+                      <button class="travel-btn">travel</button>
+                      <div class="card__posted">
+                        <div class="posted__user"><i class="far fa-user"></i>John Doe</div>
+                        <div class="posted__date"><i class="far fa-clock"></i>15 Sep, 2018</div>
+                      </div>
+                      <p class="card__desc">Ut adipisci ullam sit iste vel voluptatem</p>
+                    </div>
+                    <div class="card"><img class="card__img" src="../../images/card07.jpg" alt="card #7" style="width:100%">
+                      <button class="travel-btn">travel</button>
+                      <div class="card__posted">
+                        <div class="posted__user"><i class="far fa-user"></i>John Doe</div>
+                        <div class="posted__date"><i class="far fa-clock"></i>15 Sep, 2018</div>
+                      </div>
+                      <p class="card__desc">Molestiae dolor dignissimos cupiditate</p>
+                    </div>
+                    <div class="card"><img class="card__img" src="../../images/card08.jpg" alt="card #8" style="width:100%">
+                      <button class="travel-btn">travel</button>
+                      <div class="card__posted">
+                        <div class="posted__user"><i class="far fa-user"></i>John Doe</div>
+                        <div class="posted__date"><i class="far fa-clock"></i>15 Sep, 2018</div>
+                      </div>
+                      <p class="card__desc">Doloremque deleniti voluptatum dolorem</p>
+                    </div>
+                    <div class="card"><img class="card__img" src="../../images/card09.jpg" alt="card #9" style="width:100%">
+                      <button class="travel-btn">travel</button>
+                      <div class="card__posted">
+                        <div class="posted__user"><i class="far fa-user"></i>John Doe</div>
+                        <div class="posted__date"><i class="far fa-clock"></i>15 Sep, 2018</div>
+                      </div>
+                      <p class="card__desc">Fugiat in cupiditate iusto dolor dolorem</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="pagination">
+                  <div class="pagination__btns">
+                    <button class="pagination_btn prev" onclick="plusPages(-1)">previous</button>
+                    <button class="pagination_btn btn_numb" onclick="currentPage(1)">1</button>
+                    <button class="pagination_btn btn_numb" onclick="currentPage(2)">2</button>
+                    <button class="pagination_btn btn_numb" onclick="currentPage(3)">3</button>
+                    <button class="pagination_btn btn_numb" onclick="currentPage(4)">4</button>
+                    <button class="pagination_btn next" onclick="plusPages(1)">next</button>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="section instagram-feed">
+              <h1 class="section-title">instagram feed</h1>
+              <div class="photos">
+                <div class="photo"><img src="" alt="random photo00" id="photo__random0"></div>
+                <div class="photo"><img src="" alt="random photo01" id="photo__random1"></div>
+                <div class="photo"><img src="" alt="random photo02" id="photo__random2"></div>
+                <div class="photo"><img src="" alt="random photo03" id="photo__random3"></div>
+                <div class="photo"><img src="" alt="random photo04" id="photo__random4"></div>
+                <div class="photo"><img src="" alt="random photo05" id="photo__random5"></div>
+                <div class="photo"><img src="" alt="random photo06" id="photo__random6"></div>
+                <div class="photo"><img src="" alt="random photo07" id="photo__random7"></div>
+              </div>
+            </section>
+          </main>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__top">
+            <div class="footer__column">
+              <h2 class="column__title">about us</h2>
+              <p class="column__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+            </div>
+            <div class="footer__column">
+              <h2 class="column__title">never miss any update</h2>
+              <div class="form">
+                <input type="email" placeholder="enter your email address">
+                <input type="submit" value="">
+              </div>
+              <h2 class="column__title">follow us</h2>
+              <div class="socials"><a class="fb__link" href="#">
+                  <div class="social socials__fb"><i class="fab fa-facebook-f"></i></div></a><a class="tw__link" href="#">
+                  <div class="social socials__tw"><i class="fab fa-twitter"></i></div></a><a class="in__link" href="#">
+                  <div class="social socials__in"><i class="fab fa-instagram"></i></div></a><a class="gp__link" href="#">
+                  <div class="social socials__gp"><i class="fab fa-google-plus-g"></i></div></a></div>
+            </div>
+            <div class="footer__column">
+              <h2 class="column__title">latests posts</h2>
+              <div class="post-thumbnail"><img class="post-thumbnail__img" src="../../images/card01.jpg" alt="card #1" width="73" height="62">
+                <div class="post-thumbnail__text">
+                  <p class="post-thumbnail__desc">Eos voluptatem aut doloremque</p>
+                  <div class="post-thumbnail__date">17 July, 2018</div>
+                </div>
+              </div>
+              <div class="post-thumbnail"><img class="post-thumbnail__img" src="../../images/card02.jpg" alt="card #2" width="73" height="62">
+                <div class="post-thumbnail__text">
+                  <p class="post-thumbnail__desc">Fugiat in cupiditate iusto dolor dolorem</p>
+                  <div class="post-thumbnail__date">17 July, 2018</div>
+                </div>
+              </div>
+              <div class="post-thumbnail"><img class="post-thumbnail__img" src="../../images/card03.jpg" alt="card #3" width="73" height="62">
+                <div class="post-thumbnail__text">
+                  <p class="post-thumbnail__desc">Ut adipisci ullam sit iste vel voluptatem</p>
+                  <div class="post-thumbnail__date">17 July, 2018</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__line"></div>
+          <div class="footer__copy">
+            <p class="copy__text">Copyright 2018 Mahmuda | Site design by <a href="#" class='copy__graph'>Graphicslot</a></p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </body>
+</html>
