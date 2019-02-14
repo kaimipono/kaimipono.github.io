@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Waxom</title>
+    <meta name="description" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <link rel="shortcut icon" href="assets/img/favicon/favicon.ico" type="image/x-icon"/>
+    <meta name="theme-color" content="#000"/>
+    <meta name="msapplication-navbutton-color" content="#000"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000"/>
+    <!-- Linking Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
+    <!-- Linking Animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"/>
+    <!-- Linking own styles-->
+    <link rel="stylesheet" href="assets/css/main.min.css"/>
+  </head>
+</html>
+<body>
+  <div class="page-wrapper">
+    <header class="top-line">
+      <div class="header-content container">
+        <div class="logo wow fadeInLeft slow">
+          <div class="logo__icon"><img class="logo__img" src="assets/img/icon_logo.png" alt="Logo"/></div>
+          <div class="logo__title">waxom</div>
+        </div>
+        <nav class="top-line__navbar">
+          <ul class="navbar__menu">
+            <li class="navbar__item wow fadeInRight slow"><a class="navbar__link" href="#">home</a></li>
+            <li class="navbar__item wow fadeInRight slow"><a class="navbar__link" href="#">about us</a></li>
+            <li class="navbar__item wow fadeInRight slow"><a class="navbar__link" href="#">portfolio</a></li>
+            <li class="navbar__item wow fadeInRight slow"><a class="navbar__link" href="#">features</a></li>
+            <li class="navbar__item wow fadeInRight slow"><a class="navbar__link" href="#">blog</a></li>
+            <li class="navbar__item wow fadeInRight slow"><a class="navbar__link" href="#">pricing</a></li>
+            <li class="navbar__item wow fadeInRight slow"><a class="navbar__link" href="#">shortcodes</a></li>
+            <li class="navbar__item wow fadeInRight slow"><a class="navbar__link" href="#">contact</a></li>
+          </ul>
+          <button class="hamburger__menu wow fadeInRight slow" onclick="expandMenu()"><i class="fas fa-bars"></i></button>
+        </nav>
+      </div>
+    </header>
+    <main class="main-content">
+      <!-- Slider-->
+      <section class="slider">
+        <div class="slider__overlay"></div>
+        <!-- Slide-->
+        <div class="slider__slide">
+          <h2 class="slide__title-1">Unique and Modern Design</h2>
+          <h2 class="slide__title-2">Portfolio PSD Template</h2>
+          <p class="slide__text">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum</p>
+          <button class="btn slide__btn">get started</button>
+        </div>
+        <!-- Slide-->
+        <div class="slider__slide">
+          <h2 class="slide__title-1">Unique2 and Modern2 Design2</h2>
+          <h2 class="slide__title-2">Portfolio PSD Template</h2>
+          <p class="slide__text">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod maim placerat facer possim assum</p>
+          <button class="btn slide__btn">get started</button>
+        </div>
+        <!-- Slide-->
+        <div class="slider__slide">
+          <h2 class="slide__title-1">Unique3 and Modern3 Design3</h2>
+          <h2 class="slide__title-2">Portfolio PSD Template</h2>
+          <p class="slide__text">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod maim placerat facer possim assum</p>
+          <button class="btn slide__btn">get started</button>
+        </div>
+        <!-- Next and previous buttons-->
+        <button class="slider__prev" onclick="plusSlides(-1)"><i class="fas fa-angle-left"></i></button>
+        <button class="slider__next" onclick="plusSlides(1)"><i class="fas fa-angle-right"></i></button>
+        <!-- Slider dots-->
+        <div class="slider__dots"><span class="slider__dot" onclick="currentSlide(1)"></span><span class="slider__dot" onclick="currentSlide(2)"></span><span class="slider__dot" onclick="currentSlide(3)"></span></div>
+      </section>
+      <!-- Section services-->
+      <section class="services container">
+        <div class="services__cards">
+          <div class="card wow fadeInUp fast">
+            <div class="card__icon"><i class="fab fa-sketch"></i></div>
+            <h3 class="card__title">web & app design</h3>
+            <p class="card__desc">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim</p>
+            <div class="card__bottom-line"></div>
+          </div>
+          <div class="card wow fadeInUp fast">
+            <div class="card__icon"><i class="fas fa-laptop"></i></div>
+            <h3 class="card__title">development</h3>
+            <p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, corrupti beatae nisi porro optio nemo voluptas.</p>
+            <div class="card__bottom-line"></div>
+          </div>
+          <div class="card wow fadeInUp fast">
+            <div class="card__icon"><i class="fas fa-cog"></i></div>
+            <h3 class="card__title">customization</h3>
+            <p class="card__desc">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim</p>
+            <div class="card__bottom-line"></div>
+          </div>
+          <div class="card wow fadeInUp fast">
+            <div class="card__icon"><i class="fas fa-folder-open"></i></div>
+            <h3 class="card__title">marketing</h3>
+            <p class="card__desc">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim</p>
+            <div class="card__bottom-line"></div>
+          </div>
+        </div>
+      </section>
+      <!-- Section Our Latest Projects-->
+      <section class="latest-projects container wow fadeInUp fast">
+        <h2 class="section__title wow fadeInUp fast">our latest projects</h2>
+        <p class="section__desc wow fadeInUp fast">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo excepturi natus aperiam tenetur fugit labore earum laboriosam quisquam qui, delectus!</p>
+        <div class="filters wow fadeInUp fast">
+          <button class="filter__btn">all</button>
+          <button class="filter__btn">web design</button>
+          <button class="filter__btn">mobile app</button>
+          <button class="filter__btn">illustration</button>
+          <button class="filter__btn">photography</button>
+        </div>
+        <div class="projects-gallery"><a class="gallery__link" href="#">
+            <div class="gallery__card wow fadeInUp fast">
+              <div class="gallery__card-img"><img src="assets/img/photo01.jpg" alt="app on mobile screen" style="width: 100%;display:block"/>
+                <div class="img__hover-overlay">
+                  <div class="overlay__icons"><i class="fas fa-link"></i><i class="fas fa-search"></i></div>
+                </div>
+              </div>
+              <div class="gallery__card-desc">
+                <h3 class="gallery__card-title">claritas etiam processus</h3>
+                <p class="gallery__card-category">photography, nature</p>
+              </div>
+            </div></a><a class="gallery__link" href="#">
+            <div class="gallery__card wow fadeInUp fast">
+              <div class="gallery__card-img"><img src="assets/img/photo02.jpg" alt="app on mobile screen" style="width: 100%;display:block"/>
+                <div class="img__hover-overlay">
+                  <div class="overlay__icons"><i class="fas fa-link"></i><i class="fas fa-search"></i></div>
+                </div>
+              </div>
+              <div class="gallery__card-desc">
+                <h3 class="gallery__card-title">quam nutamus farum</h3>
+                <p class="gallery__card-category">graphic design, mock up	</p>
+              </div>
+            </div></a><a class="gallery__link" href="#">
+            <div class="gallery__card wow fadeInUp fast">
+              <div class="gallery__card-img"><img src="assets/img/photo03.jpg" alt="app on mobile screen" style="width: 100%;display:block"/>
+                <div class="img__hover-overlay">
+                  <div class="overlay__icons"><i class="fas fa-link"></i><i class="fas fa-search"></i></div>
+                </div>
+              </div>
+              <div class="gallery__card-desc">
+                <h3 class="gallery__card-title">usus legentis videntur</h3>
+                <p class="gallery__card-category">photography, holiday</p>
+              </div>
+            </div></a><a class="gallery__link" href="#">
+            <div class="gallery__card wow fadeInUp fast">
+              <div class="gallery__card-img"><img src="assets/img/photo04.jpg" alt="app on mobile screen" style="width: 100%;display:block"/>
+                <div class="img__hover-overlay">
+                  <div class="overlay__icons"><i class="fas fa-link"></i><i class="fas fa-search"></i></div>
+                </div>
+              </div>
+              <div class="gallery__card-desc">
+                <h3 class="gallery__card-title">claritas etiam processus</h3>
+                <p class="gallery__card-category">photography, nature</p>
+              </div>
+            </div></a><a class="gallery__link" href="#">
+            <div class="gallery__card wow fadeInUp fast">
+              <div class="gallery__card-img"><img src="assets/img/photo05.jpg" alt="app on mobile screen" style="width: 100%;display:block"/>
+                <div class="img__hover-overlay">
+                  <div class="overlay__icons"><i class="fas fa-link"></i><i class="fas fa-search"></i></div>
+                </div>
+              </div>
+              <div class="gallery__card-desc">
+                <h3 class="gallery__card-title">claritas etiam processus</h3>
+                <p class="gallery__card-category">photography, nature</p>
+              </div>
+            </div></a><a class="gallery__link" href="#">
+            <div class="gallery__card wow fadeInUp fast">
+              <div class="gallery__card-img"><img src="assets/img/photo06.jpg" alt="app on mobile screen" style="width: 100%;display:block"/>
+                <div class="img__hover-overlay">
+                  <div class="overlay__icons"><i class="fas fa-link"></i><i class="fas fa-search"></i></div>
+                </div>
+              </div>
+              <div class="gallery__card-desc">
+                <h3 class="gallery__card-title">claritas etiam processus</h3>
+                <p class="gallery__card-category">photography, nature</p>
+              </div>
+            </div></a></div>
+        <button class="btn projects__load-more wow fadeInUp fast">load more</button>
+      </section>
+      <!-- Section Mobile Devices-->
+      <section class="mobile-devices">
+        <div class="container">
+          <div class="mobile-devices__img wow fadeInUp fast"><img src="assets/img/iphone.png" style="max-width:100%"/></div>
+          <div class="mobile-devices__desc wow fadeInUp fast">
+            <h2 class="section__title">excellent for mobile devices</h2>
+            <p class="section__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut culpa excepturi, aliquam explicabo laborum, eum unde dicta architecto modi, ea eligendi iusto necessitatibus veniam quaerat ratione omnis facilis. Labore iusto cupiditate iure rem optio placeat, autem, ipsa cumque non. Odio.</p>
+            <ul class="mobile-devices__dividends">
+              <li class="dividends__item">nam liber tempor cum soluta nobis eleifend option;</li>
+              <li class="dividends__item">option congue nihil imperdiet doming id quod mazim placerat facer;</li>
+              <li class="dividends__item">eodem modo typi, qui nunc nobis videntur parum futurum;</li>
+              <li class="dividends__item">investigationes demonstraverunt lectores;</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Section Recent Posts-->
+      <section class="recent-posts container">
+        <h2 class="section__title wow fadeInUp fast">recent posts.</h2>
+        <p class="section__desc wow fadeInUp fast">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet tempore corporis omnis, deserunt ipsa laudantium accusamus totam enim porro placeat eaque soluta ratione! Voluptatum, saepe.</p>
+        <div class="posts-gallery">
+          <div class="post wow fadeInUp fast">
+            <div class="post-slider">
+              <div class="post-slider__slide"><img class="post__slide-img" src="assets/img/post_pic011.jpg" alt="Post photo #1" style="max-width:100%;width:100%;display:block"/>
+                <div class="post__img-overlay"></div>
+              </div>
+              <div class="post-slider__slide"><img class="post__slide-img" src="assets/img/post_pic012.jpg" alt="Post photo #1" style="max-width:100%;width:100%;display:block"/>
+                <div class="post__img-overlay"></div>
+              </div>
+              <div class="post-slider__slide"><img class="post__slide-img" src="assets/img/post_pic013.jpg" alt="Post photo #1" style="max-width:100%;width:100%;display:block"/>
+                <div class="post__img-overlay"></div>
+              </div>
+              <div class="post-slider__slide"><img class="post__slide-img" src="assets/img/post_pic014.jpg" alt="Post photo #1" style="max-width:100%;width:100%;display:block"/>
+                <div class="post__img-overlay"></div>
+              </div>
+              <div class="post-slider__dots"></div>
+              <div class="post__date">
+                <div class="post__date-day">30</div>
+                <div class="post__date-month">Sep.</div>
+              </div>
+            </div>
+            <div class="post__text">
+              <h3 class="post__title">Lorem ipsum dolor sit amet</h3>
+              <p class="post__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit in, quas possimus</p>
+              <button class="post__readmore-btn"><span>read more</span><i class="fas fa-caret-right"></i></button>
+            </div>
+          </div>
+          <div class="post wow fadeInUp fast">
+            <div class="post-slider post-slider">
+              <div class="post-slider__slide"><img class="post__slide-img" src="assets/img/post_pic02.jpg" alt="Post photo #2" style="max-width:100%;width:100%;display:block"/>
+                <div class="post__img-overlay"></div>
+              </div>
+              <div class="post-slider__slide"><img class="post__slide-img" src="assets/img/post_pic012.jpg" alt="Post photo #1" style="max-width:100%;width:100%;display:block"/>
+                <div class="post__img-overlay"></div>
+              </div>
+              <div class="post-slider__dots"></div>
+              <div class="post__date">
+                <div class="post__date-day">30</div>
+                <div class="post__date-month">Sep.</div>
+              </div>
+            </div>
+            <div class="post__text">
+              <h3 class="post__title">Lorem ipsum dolor sit amet</h3>
+              <p class="post__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit in, quas possimus</p>
+              <button class="post__readmore-btn"><span>read more</span><i class="fas fa-caret-right"></i></button>
+            </div>
+          </div>
+          <div class="post wow fadeInUp fast">
+            <div class="post-slider">
+              <div class="post-slider__slide"><img class="post__slide-img" src="assets/img/post_pic03.jpg" alt="Post photo #3" style="max-width:100%;width:100%;display:block"/>
+                <div class="post__img-overlay"></div>
+              </div>
+              <div class="post-slider__dots"></div>
+              <div class="post__date">
+                <div class="post__date-day">30</div>
+                <div class="post__date-month">Sep.</div>
+              </div>
+            </div>
+            <div class="post__text">
+              <h3 class="post__title">Lorem ipsum dolor sit amet</h3>
+              <p class="post__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit in, quas possimus</p>
+              <button class="post__readmore-btn"><span>read more</span><i class="fas fa-caret-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="top-footer">
+        <div class="top-footer__content container">
+          <div class="footer__columns">
+            <div class="footer__column footer__about-waxom wow fadeInUp fast">
+              <div class="logo">
+                <div class="logo__icon"><img class="logo__img" src="assets/img/icon_logo.png" alt="Logo"/></div>
+                <div class="logo__title">waxom</div>
+              </div>
+              <p class="footer__about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem ullam ex fugiat et, repellat placeat officiis, praesentium deserunt, voluptatibus quisquam provident. Accusantium enim quos vero, fugiat illo obcaecati soluta ab deserunt, voluptatibus quisquam provident.</p>
+              <button class="post__readmore-btn"><span>read more</span><i class="fas fa-caret-right"></i></button>
+            </div>
+            <div class="footer__column footer__recent-posts wow fadeInUp fast">
+              <h3 class="footer__column-title">recent posts</h3>
+              <div class="footer__recent-post">
+                <p class="recent-post__date">September 08, 2015</p>
+                <p class="recent-post__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+              <div class="footer__line-delimiter"></div>
+              <div class="footer__recent-post">
+                <p class="recent-post__date">September 08, 2015</p>
+                <p class="recent-post__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+              <div class="footer__line-delimiter"></div>
+              <div class="footer__recent-post">
+                <p class="recent-post__date">September 08, 2015</p>
+                <p class="recent-post__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <div class="footer__column footer__twitter-posts wow fadeInUp fast">
+              <h3 class="footer__column-title">our twitter</h3>
+              <div class="twitter-post">
+                <p class="twit__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio recusandae</p>
+                <p class="twit__date">3 mins ago</p>
+              </div>
+              <div class="footer__line-delimiter"></div>
+              <div class="twitter-post">
+                <p class="twit__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio recusandae</p>
+                <p class="twit__date">5 hours ago</p>
+              </div>
+              <div class="footer__line-delimiter"></div>
+              <div class="twitter-post">
+                <p class="twit__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio </p>
+                <p class="twit__date">20 days ago</p>
+              </div>
+            </div>
+            <div class="footer__column footer__dribble-widget wow fadeInUp fast">
+              <h3 class="footer__column-title">dribbble widget</h3>
+              <div class="dribble-widget__gallery">
+                <div class="dribble-widget__card"><img class="dribble-widget__img" src="assets/img/dribble_pic01.jpg" alt="Dribble picture #1"/></div>
+                <div class="dribble-widget__card"><img class="dribble-widget__img" src="assets/img/dribble_pic02.jpg" alt="Dribble picture #2"/></div>
+                <div class="dribble-widget__card"><img class="dribble-widget__img" src="assets/img/dribble_pic03.jpg" alt="Dribble picture #3"/></div>
+                <div class="dribble-widget__card"><img class="dribble-widget__img" src="assets/img/dribble_pic04.jpg" alt="Dribble picture #4"/></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-footer">
+        <div class="bottom-footer__content container">
+          <div class="bottom-footer__right wow fadeInLeft slow"><span class="footer__span">copyright &copy; 2015 <span class='footer__span-span'>waxom</span></span><a class="bottom-footer__right-link" href="#">privacy policy</a><a class="bottom-footer__right-link" href="#">FAQ</a><a class="bottom-footer__right-link" href="#">support</a></div>
+          <div class="bottom-footer__left wow fadeInRight slow"><span class="footer__span">Designed by <span class='footer__span-span'>ThemeFire</span></span><span class="footer__span">Only on <span class='footer__span-span'>Envato Market</span></span></div>
+        </div>
+      </div>
+    </footer>
+    <!-- Connecting WOW-->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- Connecting own scripts-->
+    <script src="assets/js/scripts.min.js"></script>
+  </div>
+</body>
