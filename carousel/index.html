@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Carousel</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Подключаем шрифты -->
+	<link href="https://fonts.googleapis.com/css?family=Lora|Montserrat:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+	<!-- Подключаем Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<!-- Подключаем стили -->
+	<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+	<!-- Обертка для слайдера -->
+	<div class="carousel-wrapper">
+		<!-- Слайдер-карусель -->
+		<div class="carousel">
+			<h1 class="carousel__title">
+				colorpedia <span>/фоновые мозаики/</span>
+			</h1>
+			<div class="carousel__slides">
+				<!-- Первый слайд -->
+				<div class="slide">
+					<div class="slide__img">
+						<img src="assets/img/1.jpg" alt="Первая мозаика">
+					</div><div class="slide__desc">
+						<h2 class="slide__title">diamond</h1>
+						<p class="slide__text">Компания Sicis отдает дань уважения арабскому стилю с прозрачным хрустальным стеклом. И создала великолепные трехмерные раскладки с помощью ромбоидальных иозаичных ячеек. И создала великолепные трехмерные раскладки с ромбоидальных.</p>
+						<a href="#" class="details">
+							<span class="details__word">подробнее</span>
+							<i class="fas fa-long-arrow-alt-right"></i>
+						</a>
+					</div>
+				</div>
+				<!-- Второй слайд -->
+				<div class="slide">
+					<div class="slide__img">
+						<img src="assets/img/2.jpg" alt="Вторая мозаика">
+					</div><div class="slide__desc">
+						<h1 class="slide__title">diamond</h1>
+						<p class="slide__text">Компания Sicis отдает дань уважения арабскому стилю с прозрачным хрустальным стеклом. И создала великолепные трехмерные раскладки с помощью ромбоидальных иозаичных ячеек. И создала великолепные трехмерные раскладки с ромбоидальных.</p>
+						<a href="#" class="details">
+							<span class="details__word">подробнее</span>
+							<i class="fas fa-long-arrow-alt-right"></i>
+						</a>
+					</div>
+				</div>
+				<!-- Третий слайд -->
+				<div class="slide">
+					<div class="slide__img">
+						<img src="assets/img/3.jpg" alt="Третья мозаика">
+					</div><div class="slide__desc">
+						<h1 class="slide__title">diamond</h1>
+						<p class="slide__text">Компания Sicis отдает дань уважения арабскому стилю с прозрачным хрустальным стеклом. И создала великолепные трехмерные раскладки с помощью ромбоидальных иозаичных ячеек. И создала великолепные трехмерные раскладки с ромбоидальных.</p>
+						<a href="#" class="details">
+							<span class="details__word">подробнее</span>
+							<i class="fas fa-long-arrow-alt-right"></i>
+						</a>
+					</div>
+				</div>
+				<!-- Четвертый слайд -->
+				<div class="slide">
+					<div class="slide__img">
+						<img src="assets/img/1.jpg" alt="Первая мозаика">
+					</div><div class="slide__desc">
+						<h2 class="slide__title">diamond</h1>
+						<p class="slide__text">Компания Sicis отдает дань уважения арабскому стилю с прозрачным хрустальным стеклом. И создала великолепные трехмерные раскладки с помощью ромбоидальных иозаичных ячеек. И создала великолепные трехмерные раскладки с ромбоидальных.</p>
+						<a href="#" class="details">
+							<span class="details__word">подробнее</span>
+							<i class="fas fa-long-arrow-alt-right"></i>
+						</a>
+					</div>
+				</div>
+				<!-- Пятый слайд -->
+				<div class="slide">
+					<div class="slide__img">
+						<img src="assets/img/2.jpg" alt="Вторая мозаика">
+					</div><div class="slide__desc">
+						<h1 class="slide__title">diamond</h1>
+						<p class="slide__text">Компания Sicis отдает дань уважения арабскому стилю с прозрачным хрустальным стеклом. И создала великолепные трехмерные раскладки с помощью ромбоидальных иозаичных ячеек. И создала великолепные трехмерные раскладки с ромбоидальных.</p>
+						<a href="#" class="details">
+							<span class="details__word">подробнее</span>
+							<i class="fas fa-long-arrow-alt-right"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Кнопки next и previous -->
+			<button class="carousel__prev">
+				<i class="fas fa-arrow-left"></i>
+			</button>
+			<button class="carousel__next">
+				<i class="fas fa-arrow-right"></i>
+			</button>
+
+			<!-- Контролы -->
+
+			<div class="carousel__dots">
+				<div class="carousel__dot is-active__dot" data-dotnumber="0" onclick="currentSlide(0)">
+					<span class="carousel__dots-number">1</span>
+				</div>
+				<div class="carousel__dot" data-dotnumber="1" onclick="currentSlide(1)">
+					<span class="carousel__dots-number">2</span>
+				</div>
+				<div class="carousel__dot" data-dotnumber="2" onclick="currentSlide(2)">
+					<span class="carousel__dots-number">3</span>
+				</div>
+				<div class="carousel__dot" data-dotnumber="3" onclick="currentSlide(3)">
+					<span class="carousel__dots-number">4</span>
+				</div>
+				<div class="carousel__dot" data-dotnumber="4" onclick="currentSlide(4)">
+					<span class="carousel__dots-number">5</span>
+				</div>
+			</div>
+
+			<a href="#" class="view-all">
+				<span class="view-all__word">смотреть все</span>
+				<i class="fas fa-long-arrow-alt-right"></i>
+			</a>
+				
+			</div>
+
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+	<script src="assets/js/scripts.js"></script>
+</body>
+</html>

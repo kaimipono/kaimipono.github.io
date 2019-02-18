@@ -1,0 +1,279 @@
+/*------ General styles ---------*/
+
+*, *::after, *::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%; /* set basic font size 16px * 0.625 = 10px */
+}
+
+a:link, a:visited, a:hover, a:active {
+	text-decoration: none;
+}
+
+/*------- Carousel styles ---------*/
+
+.carousel-wrapper {
+	max-width: 1920px;
+	width: 95%;
+	margin: 10rem auto;
+	background-color: #f5efec;
+}
+
+.carousel {
+	width: 100%;
+	padding: 8rem 5rem 7rem;
+	overflow-x: hidden;
+	position: relative;
+}
+
+.carousel__title {
+	position: absolute;
+	top: 3rem;
+	left: 14%;
+	font-family: 'Lora';
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 4rem;
+	color: #d9c5bc;
+}
+
+.carousel__title span {
+	font-family: 'Montserrat';
+	font-size: 2rem;
+}
+
+.carousel__slides {
+	width: 500%;
+}
+
+.slide {
+	width: auto;
+	float: left;
+	display: flex;
+	margin-right: 13rem;
+	transform: translateX(20%);
+	transition: transform 750ms linear;
+}
+
+.slide__img {
+	width: 34.27vw;
+	max-width: 658px;
+	position: relative;
+	z-index: 2;
+	box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.3);
+}
+
+.slide__img img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.slide__desc {
+	width: 23.542vw;
+	max-width: 452px;
+	padding: 2%;
+	background-color: #fff;
+	color: #333333;
+	position: relative;
+	z-index: 1;
+	box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.3);
+	transform: translateX(0);
+	transition: transform 750ms linear;
+}
+
+.prevSlide .slide__desc {
+	transform: translateX(-100%);
+}
+
+.slide__title {
+	margin-bottom: 2%;
+	font-family: 'Lora', serif;
+	font-weight: 700;
+	font-size: 2.2rem;
+	text-transform: uppercase;
+}
+
+.slide__text {
+	margin-bottom: 2%;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 1.6rem;
+	line-height: 1.6;
+}
+
+.details, .view-all {
+	color: #333;
+}
+
+.details__word, .view-all__word {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+}
+
+.details i, .view-all__word i {
+	font-size: 2rem;
+}
+
+.carousel__prev, .carousel__next {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	border: none;
+	width: 5rem;
+	height: 5rem;
+	border-radius: 50%;
+	cursor: pointer;
+	background-color: #fff;
+}
+
+.carousel__prev {
+	left: 5.6%;
+}
+
+.carousel__next {
+	right: 20%;
+}
+
+.carousel__prev i, .carousel__next i {
+	color: #333;
+	font-size: 3rem;
+	font-weight: 600;
+}
+
+.carousel__dots {
+	width: auto;
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.view-all {
+	cursor: pointer;
+	position: absolute;
+	bottom: 5%;
+	right: 5%;
+}
+
+.carousel__dot {
+	display: inline-block;
+	margin-right: 2rem;
+	width: 1.2rem;
+	height: 1.2rem;
+	text-align: center;
+	background-color: #d6c0b4;
+	border: 1px solid #d6c0b4;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: all 750ms ease;
+}
+
+.carousel__dots-number {
+	color: #d6c0b4;
+}
+
+.carousel__dot:hover, .is-active__dot {
+	background-color: transparent;
+	transform: scale(2);
+}
+
+@media screen and (max-width: 1550px) {
+	.carousel__title {
+		font-size: 3.5rem;
+	}
+	.carousel__title span {
+		font-size: 1.75rem;
+	}
+	.slide {
+		margin-right: 9rem;
+	}
+	.slide__title {
+		font-size: 1.7rem;
+	}
+	.slide__text {
+		font-size: 1.3rem;
+		line-height: 1.3;
+	}
+	.details__word, .view-all__word {
+		font-size: 1.5rem;
+	}
+	.carousel__next {
+		right: 15%;
+	}
+}
+
+@media screen and (max-width: 1115px) {
+	.carousel__title {
+		font-size: 3rem;
+	}
+	.carousel__title span {
+		font-size: 1.5rem;
+	}
+	.slide {
+		margin-right: 5rem;
+	}
+	.slide__title {
+		font-size: 1.3rem;
+	}
+	.slide__text {
+		font-size: 0.9rem;
+		line-height: 1;
+	}
+	.details__word, .view-all__word {
+		font-size: 1.1rem;
+	}
+	.carousel__next {
+		right: 12%;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	.carousel {
+		padding: 8rem 0 7rem;
+	}
+	.slide {
+		display: block;
+		width: 20%;
+		margin: 0 auto;
+		transform: translateX(0);
+	}
+	.slide__img, .slide__desc {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.slide__img {
+		box-shadow: none;
+	}
+	.slide__desc {
+		max-width: 658px;
+	}
+	.slide__title {
+		margin-top: 1.5rem;
+	}
+	.slide__text {
+		margin-bottom: 2rem;
+		font-size: 1.3rem;
+		line-height: 1.6;
+	}
+
+	.carousel__prev, .carousel__next {
+		top: 42.5%;
+	}
+	.carousel__prev {
+		left: 5%;
+	}
+	.carousel__next {
+		right: 5%;
+	}
+
+	.prevSlide .slide__desc {
+		transform: translateX(0);
+	}
+}
