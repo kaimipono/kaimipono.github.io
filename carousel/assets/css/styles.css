@@ -19,7 +19,7 @@ a:link, a:visited, a:hover, a:active {
 .carousel-wrapper {
 	max-width: 1920px;
 	width: 95%;
-	margin: 10rem auto;
+	margin: 3rem auto;
 	background-color: #f5efec;
 }
 
@@ -31,9 +31,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .carousel__title {
-	position: absolute;
-	top: 3rem;
-	left: 14%;
+	margin-left: 13%;
 	font-family: 'Lora';
 	font-weight: 400;
 	text-transform: uppercase;
@@ -130,7 +128,7 @@ a:link, a:visited, a:hover, a:active {
 	height: 5rem;
 	border-radius: 50%;
 	cursor: pointer;
-	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0.5);
 }
 
 .carousel__prev {
@@ -238,6 +236,12 @@ a:link, a:visited, a:hover, a:active {
 	.carousel {
 		padding: 8rem 0 7rem;
 	}
+	.carousel__title {
+		margin: 0 auto;
+		width: 55%;
+		font-size: 2.5rem;
+		text-align: center;
+	}
 	.slide {
 		display: block;
 		width: 20%;
@@ -264,13 +268,21 @@ a:link, a:visited, a:hover, a:active {
 	}
 
 	.carousel__prev, .carousel__next {
-		top: 42.5%;
+		top: 36%;
 	}
 	.carousel__prev {
 		left: 5%;
 	}
 	.carousel__next {
 		right: 5%;
+	}
+	.carousel__dot {
+		margin-right: 1.5rem;
+	}
+	.view-all {
+		left: 50%;
+		bottom: 1%;
+		transform: translateX(-50%);
 	}
 
 	.prevSlide .slide__desc {
